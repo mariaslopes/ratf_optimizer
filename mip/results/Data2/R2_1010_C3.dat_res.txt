@@ -1,0 +1,22 @@
+TimeToSolve= 193.937
+Objective= 8.766
+NumberOfIterations= 11584686
+NumberOfConstrains= 5994
+NumberOfVariables= 6384
+tf= 13
+RelativeGap= 0.00009845
+LowerBound= 8.765136986
+Iteration t = 0, location = 18
+Iteration t = 1, location = 50
+Iteration t = 2, location = 11
+Iteration t = 3, location = 51
+Iteration t = 4, location = 52
+Iteration t = 5, location = 53
+Iteration t = 6, location = 14
+Iteration t = 7, location = 12
+Iteration t = 8, location = 62
+Iteration t = 9, location = 63
+Iteration t = 10, location = 64
+Iteration t = 11, location = 15
+Iteration t = 12, location = 65
+Iteration t = 13, location = 65

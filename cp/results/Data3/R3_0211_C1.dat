@@ -1,0 +1,103 @@
+nBoxes = 4;
+L_c = [50, 51, 52, 53];
+n_eta = [0,2,1,1];
+C = 1;
+
+Tasks = {"Entry","Picking1","Picking2","Picking3","Dropping1","Dropping2","Dropping3","Output","Machine","MachineA","MachineB"};
+    Workers = {"R","E1","E2","E3","E4","O1","O2","O3","O4","A1","A2","B1","B2"};
+
+    Pickings = {"Picking1","Picking2","Picking3"};
+    Droppings = {"Dropping1","Dropping2","Dropping3"};
+    Machines = {"Machine","MachineA","MachineB"};
+
+Skills = {
+      < "R",  "Picking1",   0>,
+      < "R",  "Dropping1",  0>,
+      < "R",  "Picking2",   1>,
+      < "R",  "Dropping2",  1>,
+      < "R",  "Picking3",   2>,
+      < "R",  "Dropping3",  2>,
+      < "E1",  "Entry",   50>,
+      < "E2",  "Entry",   51>,
+      < "E3",  "Entry",   52>,
+      < "E4",  "Entry",   53>,
+      < "O1",  "Output",  62>,
+      < "O2",  "Output",  63>,
+      < "O3",  "Output",  64>,
+      < "O4",  "Output",  65>,
+      < "A1",  "Machine",  11>,
+      < "A2",  "Machine",  18>,
+      < "B1",  "Machine",  7>,
+      < "B2",  "Machine",  14>,
+      < "A1",  "MachineA",  11>,
+      < "A2",  "MachineA",  18>,
+      < "B1",  "MachineB",  7>,
+      < "B2",  "MachineB",  14>,
+    };
+
+Precedences = #[
+1:{
+  <"Entry",     "Picking1" , "endAtEnd">,
+  <"Picking1",  "Dropping1", "endBeforeStart">,
+  <"Dropping1", "Output", "startAtEnd">
+
+  <"Output", "Picking2", "endBeforeStart">
+  <"Output", "Picking3", "endBeforeStart">
+  <"Output", "Dropping2", "endBeforeStart">
+  <"Output", "Dropping3", "endBeforeStart">
+  <"Output", "MachineA", "endBeforeStart">
+  <"Output", "MachineB", "endBeforeStart">
+  <"Output", "Machine", "endBeforeStart">
+}
+2:{
+  <"Entry",   "Picking1" , "endAtEnd">,
+  <"Picking1",   "Dropping1", "endBeforeStart">,
+  <"Dropping1",   "MachineA", "startAtEnd">
+  <"MachineA",   "Picking2", "endAtEnd">
+  <"Picking2",   "Dropping2", "endBeforeStart">,
+  <"Dropping2",   "MachineB", "startAtEnd">
+  <"MachineB",   "Picking3", "endAtEnd">
+  <"Picking3",   "Dropping3", "endBeforeStart">,
+  <"Dropping3",   "Output", "startAtEnd">
+
+  <"Output",   "Machine", "endBeforeStart">
+}
+3:{
+  < "Entry",   "Picking1" , "endAtEnd">,
+  < "Picking1",   "Dropping1", "endBeforeStart">,
+  < "Dropping1",   "Machine", "startAtEnd">
+  < "Machine",   "Picking2", "endAtEnd">
+  < "Picking2",   "Dropping2", "endBeforeStart">,
+  < "Dropping2",   "Output", "startAtEnd">
+
+  < "Output",   "Picking3", "endBeforeStart">
+  < "Output",   "Dropping3", "endBeforeStart">
+  <  "Output",   "MachineA", "endBeforeStart">
+  <  "Output",   "MachineB", "endBeforeStart">
+}
+4:{
+  < "Entry",   "Picking1" , "endAtEnd">,
+  < "Picking1",   "Dropping1", "endBeforeStart">,
+  < "Dropping1",   "Machine", "startAtEnd">
+  < "Machine",   "Picking2", "endAtEnd">
+  < "Picking2",   "Dropping2", "endBeforeStart">,
+  < "Dropping2",   "Output", "startAtEnd">
+
+  < "Output",   "Picking3", "endBeforeStart">
+  < "Output",   "Dropping3", "endBeforeStart">
+  <  "Output",   "MachineA", "endBeforeStart">
+  <  "Output",   "MachineB", "endBeforeStart">
+}
+]#;
+
+Parts = #[
+    1:
+   {"Entry","Picking1","Dropping1","Output"}
+    2:
+   {"Entry","Picking1","Dropping1","MachineA","Picking2","Dropping2","MachineB","Picking3","Dropping3","Output"}
+    3:
+   {"Entry","Picking1","Dropping1","Machine","Picking2","Dropping2","Output"}
+    4:
+   {"Entry","Picking1","Dropping1","Machine","Picking2","Dropping2","Output"}
+]#;
+

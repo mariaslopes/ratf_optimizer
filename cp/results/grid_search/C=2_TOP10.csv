@@ -1,0 +1,11 @@
+,Value,Operation_1,Operation_2,Method
+180,20.735,selectSmallest(domainMin()),selectSmallest(value()),Restart
+182,20.863,selectSmallest(domainMin()),selectSmallest(valueSuccessRate()),Restart
+177,20.89,selectSmallest(domainMin()),selectLargest(value()),Restart
+178,20.898,selectSmallest(domainMin()),selectLargest(valueImpact()),Restart
+181,20.898,selectSmallest(domainMin()),selectSmallest(valueImpact()),Restart
+213,20.931,selectSmallest(regretOnMin()),selectLargest(value()),Restart
+173,20.941,selectSmallest(domainMax()),selectLargest(valueSuccessRate()),Restart
+179,20.956,selectSmallest(domainMin()),selectLargest(valueSuccessRate()),Restart
+217,20.968,selectSmallest(regretOnMin()),selectSmallest(valueImpact()),Restart
+214,20.995,selectSmallest(regretOnMin()),selectLargest(valueImpact()),Restart

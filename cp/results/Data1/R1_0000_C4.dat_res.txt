@@ -1,0 +1,14 @@
+TimeToSolve= 2.404
+Objective= 5.49
+tf= 9
+RelativeGap= 0.0001
+LowerBound= 5.489451
+Iteration t = 0, location = 18
+Iteration t = 1, location = 50
+Iteration t = 2, location = 51
+Iteration t = 3, location = 52
+Iteration t = 4, location = 53
+Iteration t = 5, location = 62
+Iteration t = 6, location = 63
+Iteration t = 7, location = 64
+Iteration t = 8, location = 65

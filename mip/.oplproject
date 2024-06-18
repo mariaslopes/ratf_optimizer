@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+    	
+    <version>1.0</version>
+    	
+    <configs>
+        		
+        <config default="true" name="basic_testing" category="opl">
+		</config>
+        		
+        <config default="false" name="instance_run" category="opl">
+            			
+            <ref name="main.mod" type="model">
+			</ref>
+            			
+            <ref name="main.dat" type="data">
+			</ref>
+            		
+        </config>
+        	
+    </configs>
+    	
+
+</project>

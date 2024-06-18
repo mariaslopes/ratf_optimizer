@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+    	
+    <version>1.0</version>
+    	
+    <configs>
+        		
+        <config default="true" name="basic_testing" category="opl">
+            			
+            <ref name="cp_model.mod" type="model">
+			</ref>
+            			
+            <ref name="model.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="instance_run" category="opl">
+            			
+            <ref name="cp_main.mod" type="model">
+			</ref>
+            			
+            <ref name="cp_main.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="grid_search" category="opl">
+            			
+            <ref name="grid_search_main.mod" type="model">
+			</ref>
+            			
+            <ref name="grid_search.dat" type="data">
+			</ref>
+            		
+        </config>
+        	
+    </configs>
+    	
+
+</project>

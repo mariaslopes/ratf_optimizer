@@ -1,0 +1,11 @@
+,Value,Operation_1,Operation_2,Method
+116,1.192,selectSmallest(regretOnMin()),selectSmallest(value()),IterativeDiving
+76,1.193,selectSmallest(domainMin()),selectSmallest(valueSuccessRate()),IterativeDiving
+115,1.198,selectSmallest(regretOnMin()),selectRandomValue(),IterativeDiving
+74,1.211,selectSmallest(domainMin()),selectSmallest(value()),IterativeDiving
+73,1.212,selectSmallest(domainMin()),selectRandomValue(),IterativeDiving
+112,1.212,selectSmallest(regretOnMin()),selectLargest(value()),IterativeDiving
+72,1.221,selectSmallest(domainMin()),selectLargest(valueSuccessRate()),IterativeDiving
+69,1.221,selectSmallest(domainMax()),selectSmallest(valueSuccessRate()),IterativeDiving
+118,1.222,selectSmallest(regretOnMin()),selectSmallest(valueSuccessRate()),IterativeDiving
+70,1.23,selectSmallest(domainMin()),selectLargest(value()),IterativeDiving

@@ -1,0 +1,6 @@
+"Data3E/R3E_2200_C1.dat",
+"Data3E/R3E_2210_C1.dat",
+"Data3E/R3E_2211_C1.dat",
+"Data3E/R3E_2220_C1.dat",
+"Data3E/R3E_2221_C1.dat",
+"Data3E/R3E_2222_C1.dat",
