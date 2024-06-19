@@ -10,10 +10,10 @@
 main {
     var runR1 = 0;
     var runR2 = 0;
-    var runR2E = 1;
+    var runR2E = 0;
     var runR2M3 = 0;
     var runR3 = 0;
-    var runR3E = 0;
+    var runR3E = 1;
     
     if(runR1)
     {

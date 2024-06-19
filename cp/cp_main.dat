@@ -113,9 +113,9 @@ datFiles_R3 = { "Data3/R3_1120_C2.dat",
 				"Data3/R3_2110_C4.dat",
 				"Data3/R3_1201_C4.dat"};
     
-datFiles_R3E = {"Data3E/R3E_2200_C1.dat",
-				"Data3E/R3E_2210_C1.dat",
-				"Data3E/R3E_2211_C1.dat",
-				"Data3E/R3E_2220_C1.dat",
-				"Data3E/R3E_2221_C1.dat",
+datFiles_R3E = { //"Data3E/R3E_2200_C1.dat",
+//				"Data3E/R3E_2210_C1.dat",
+//				"Data3E/R3E_2211_C1.dat",
+//				"Data3E/R3E_2220_C1.dat",
+//				"Data3E/R3E_2221_C1.dat",
 				"Data3E/R3E_2222_C1.dat"};

@@ -37,17 +37,17 @@ Skills = {
 
 Precedences = #[
 1:{
-  < "Entry",   "Picking1" , "endAtEnd">,
-  < "Picking1",   "Dropping1", "endBeforeStart">,
-  < "Dropping1",   "Machine", "startAtEnd">
-  < "Machine",   "Picking2", "endAtEnd">
-  < "Picking2",   "Dropping2", "endBeforeStart">,
-  < "Dropping2",   "Output", "startAtEnd">
+  <"Entry",   "Picking1" , "endAtEnd">,
+  <"Picking1",   "Dropping1", "endBeforeStart">,
+  <"Dropping1",   "MachineB", "startAtEnd">
+  <"MachineB",   "Picking2", "endAtEnd">
+  <"Picking2",   "Dropping2", "endBeforeStart">,
+  <"Dropping2",   "Output", "startAtEnd">
 
-  < "Output",   "Picking3", "endBeforeStart">
-  < "Output",   "Dropping3", "endBeforeStart">
-  <  "Output",   "MachineA", "endBeforeStart">
-  <  "Output",   "MachineB", "endBeforeStart">
+  <"Output",   "Picking3", "endBeforeStart">
+  <"Output",   "Dropping3", "endBeforeStart">
+  <"Output",   "MachineA", "endBeforeStart">
+  <"Output",   "Machine", "endBeforeStart">
 }
 2:{
   <"Entry",   "Picking1" , "endAtEnd">,
@@ -63,17 +63,17 @@ Precedences = #[
   <"Output",   "Machine", "endBeforeStart">
 }
 3:{
-  < "Entry",   "Picking1" , "endAtEnd">,
-  < "Picking1",   "Dropping1", "endBeforeStart">,
-  < "Dropping1",   "Machine", "startAtEnd">
-  < "Machine",   "Picking2", "endAtEnd">
-  < "Picking2",   "Dropping2", "endBeforeStart">,
-  < "Dropping2",   "Output", "startAtEnd">
+  <"Entry",   "Picking1" , "endAtEnd">,
+  <"Picking1",   "Dropping1", "endBeforeStart">,
+  <"Dropping1",   "MachineB", "startAtEnd">
+  <"MachineB",   "Picking2", "endAtEnd">
+  <"Picking2",   "Dropping2", "endBeforeStart">,
+  <"Dropping2",   "Output", "startAtEnd">
 
-  < "Output",   "Picking3", "endBeforeStart">
-  < "Output",   "Dropping3", "endBeforeStart">
-  <  "Output",   "MachineA", "endBeforeStart">
-  <  "Output",   "MachineB", "endBeforeStart">
+  <"Output",   "Picking3", "endBeforeStart">
+  <"Output",   "Dropping3", "endBeforeStart">
+  <"Output",   "MachineA", "endBeforeStart">
+  <"Output",   "Machine", "endBeforeStart">
 }
 4:{
   <"Entry",     "Picking1" , "endAtEnd">,
@@ -92,11 +92,11 @@ Precedences = #[
 
 Parts = #[
     1:
-   {"Entry","Picking1","Dropping1","Machine","Picking2","Dropping2","Output"}
+   {"Entry","Picking1","Dropping1","MachineB","Picking2","Dropping2","Output"}
     2:
    {"Entry","Picking1","Dropping1","MachineA","Picking2","Dropping2","MachineB","Picking3","Dropping3","Output"}
     3:
-   {"Entry","Picking1","Dropping1","Machine","Picking2","Dropping2","Output"}
+   {"Entry","Picking1","Dropping1","MachineB","Picking2","Dropping2","Output"}
     4:
    {"Entry","Picking1","Dropping1","Output"}
 ]#;

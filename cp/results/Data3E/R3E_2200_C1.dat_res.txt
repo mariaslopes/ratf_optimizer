@@ -1,4 +1,4 @@
-TimeToSolve= 6.146
+TimeToSolve= 10.145
 Objective= 15.532
 tf= 17
 RelativeGap= 0.0001
